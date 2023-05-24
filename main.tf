@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "pracbucket_04" {
-  bucket = "practice-bucket-7246"
+  bucket = "bucket-gitHubAction"
 
   tags = {
     owner   = var.owner

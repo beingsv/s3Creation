@@ -1,9 +1,7 @@
 name: Terraform Apply
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   terraform_apply:
@@ -26,8 +24,6 @@ jobs:
       - name: Terraform Init
         run: terraform init
 
-      # - name: Terraform Validate
-      #   run: terrafrom validate
 
       - name: Terraform Plan
         run: terraform plan
